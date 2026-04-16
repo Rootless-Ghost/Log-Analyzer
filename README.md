@@ -89,9 +89,8 @@ log-analyzer/
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
----
 
 <div align="center">
 

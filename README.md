@@ -10,7 +10,7 @@ A Python-based security log analysis tool designed for SOC analysts. Parses log 
 
 </div>
 
-> **Scope:** This tool is retained as the log-analysis and detection stage used by [IR-Chain](https://github.com/Rootless-Ghost/ir-chain). [LogNorm](https://github.com/Rootless-Ghost/LogNorm) supersedes it for log normalization, and [SigmaForge](https://github.com/Rootless-Ghost/SigmaForge) supersedes it for detection-rule authoring — but neither LogNorm nor SigmaForge executes detections against an event stream, so this tool remains in active use for that stage.
+> **Scope:** This tool is retained as the log-analysis and detection stage used by [IR-Chain](https://github.com/Rootless-Ghost/Nebula-Forge/tree/main/ir-chain). [LogNorm](https://github.com/Rootless-Ghost/LogNorm) supersedes it for log normalization, and [SigmaForge](https://github.com/Rootless-Ghost/SigmaForge) supersedes it for detection-rule authoring — but neither LogNorm nor SigmaForge executes detections against an event stream, so this tool remains in active use for that stage.
 
 ## Features
 

@@ -38,7 +38,7 @@ A Python-based security log analysis tool designed for SOC analysts. Parses log 
 
 ## Features
 
-- **Log Parsing**: Supports Windows Security Event Logs (.evtx, .csv) and Linux auth logs
+- **Log Parsing**: Supports Windows Security Event Logs (.csv export) and Linux auth logs
 - **Threat Detection**: Identifies suspicious patterns including:
   - Failed login attempts (brute force detection)
   - Logins at unusual hours

@@ -15,7 +15,7 @@ A Python-based security log analysis tool designed for SOC analysts. Parses log 
 ## Features
 
 
-- **Log Parsing**: Supports Windows Security Event Logs (.csv export) and Linux auth logs
+- **Log Parsing**: Supports Windows Security Event Log CSV exports only. Linux auth.log parsing was never implemented — `parse_linux_log()` is a stub that returns an empty list (see Roadmap).
 - **Threat Detection**: Identifies suspicious patterns including:
   - Failed login attempts (brute force detection)
   - Logins at unusual hours
@@ -81,10 +81,10 @@ log-analyzer/
 ## Roadmap
 
 - [x] Project setup
-- [ ] Windows Event Log parser (CSV)
-- [ ] Basic detection rules
-- [ ] Terminal output
-- [ ] HTML report generation
+- [x] Windows Event Log parser (CSV)
+- [x] Basic detection rules
+- [x] Terminal output
+- [x] HTML report generation
 - [ ] Linux auth.log parser
 - [ ] IP reputation lookup (VirusTotal/AbuseIPDB)
 - [ ] Custom detection rules via config

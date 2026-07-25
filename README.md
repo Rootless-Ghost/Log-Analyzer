@@ -10,9 +10,11 @@ A Python-based security log analysis tool designed for SOC analysts. Parses log 
 
 </div>
 
+> **Scope:** This tool is retained as the log-analysis and detection stage used by [IR-Chain](https://github.com/Rootless-Ghost/ir-chain). [LogNorm](https://github.com/Rootless-Ghost/LogNorm) supersedes it for log normalization, and [SigmaForge](https://github.com/Rootless-Ghost/SigmaForge) supersedes it for detection-rule authoring — but neither LogNorm nor SigmaForge executes detections against an event stream, so this tool remains in active use for that stage.
+
 ## Features
 
-- **Log Parsing**: Supports Windows Security Event Logs (.evtx, .csv) and Linux auth logs
+- **Log Parsing**: Supports Windows Security Event Log CSV exports only. Linux auth.log parsing was never implemented — `parse_linux_log()` is a stub that returns an empty list (see Roadmap).
 - **Threat Detection**: Identifies suspicious patterns including:
   - Failed login attempts (brute force detection)
   - Logins at unusual hours
@@ -39,12 +41,11 @@ pip install -r requirements.txt
 
 ## Usage
 
+Only `--type windows` is implemented — `--type linux` calls a stub (`parse_linux_log()`) that silently returns zero events.
+
 ```bash
 # Analyze a Windows Security Event Log (CSV export)
 python src/log_analyzer.py --input samples/security_log.csv --type windows
-
-# Analyze a Linux auth log
-python src/log_analyzer.py --input /var/log/auth.log --type linux
 
 # Generate HTML report
 python src/log_analyzer.py --input samples/security_log.csv --type windows --report html

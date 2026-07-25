@@ -1,4 +1,30 @@
 <div align="center">
+
+
+> ## ⚠️ Archived — superseded by Nebula Forge
+>
+> This project is no longer maintained. Its functionality has been absorbed
+> into the [Nebula Forge](https://github.com/Rootless-Ghost/Nebula-Forge)
+> detection engineering platform, which splits the work across two
+> purpose-built components:
+>
+> - **Log parsing and normalization** →
+>   [LogNorm](https://github.com/Rootless-Ghost/LogNorm) — normalizes Sysmon,
+>   Windows Event Log, Wazuh, syslog, and CEF sources to a versioned ECS-lite
+>   schema. Supersedes the Windows CSV and Linux auth.log parsers here.
+> - **Detection logic** →
+>   [SigmaForge](https://github.com/Rootless-Ghost/SigmaForge) — the brute
+>   force, off-hours login, privilege escalation, and account lockout rules
+>   from this project are now maintained as Sigma templates with MITRE ATT&CK
+>   tagging and multi-backend output (Splunk SPL, Elastic KQL/EQL, Sentinel KQL).
+>
+> Detection logic belongs in portable rules rather than hardcoded Python — this
+> repo is kept public as a reference point for that transition.
+>
+> **Note:** `.evtx` parsing was listed on the roadmap but never implemented;
+> only CSV export parsing was completed.
+
+
   
 # 📁 Log Analyzer
 

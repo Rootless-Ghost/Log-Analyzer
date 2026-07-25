@@ -36,7 +36,7 @@ A Python-based security log analysis tool designed for SOC analysts. Parses log 
 
 ```bash
 git clone https://github.com/Rootless-Ghost/Log-Analyzer.git
-cd log-analyzer
+cd Log-Analyzer
 pip install -r requirements.txt
 ```
 
